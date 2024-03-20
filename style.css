@@ -67,6 +67,12 @@ table {
     margin-top: 20px;
 }
 
+button {
+    background-color: #97d1af;
+    padding: 10px;
+    text-align: center;
+}
+
 th, td {
     border: 1px solid #6aa1c5;
     padding: 8px;
@@ -81,7 +87,7 @@ th {
 @media screen and (min-width: 500px) {
 
     .flex_container {
-        display: flex;
+        display: none;
         background-color: lightgray;
         justify-content: center;
         flex-wrap: wrap;
@@ -91,7 +97,7 @@ th {
 
 @media screen and (max-width: 500px) {
     .flex_container {
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: lightgray;
         flex-wrap: wrap;
@@ -113,4 +119,8 @@ th {
         height: 200px;
         justify-content: center;
     }
+}
+
+.show {
+    display: flex;
 }
