@@ -84,10 +84,14 @@ th {
     color: #fff;
 }
 
+#dropdown {
+    display: flex;
+}
+
 @media screen and (min-width: 500px) {
 
     .flex_container {
-        display: none;
+        display: flex;
         background-color: lightgray;
         justify-content: center;
         flex-wrap: wrap;
@@ -97,7 +101,7 @@ th {
 
 @media screen and (max-width: 500px) {
     .flex_container {
-        display: none;
+        display: flex;
         flex-direction: column;
         background-color: lightgray;
         flex-wrap: wrap;
@@ -119,8 +123,4 @@ th {
         height: 200px;
         justify-content: center;
     }
-}
-
-.show {
-    display: flex;
 }
