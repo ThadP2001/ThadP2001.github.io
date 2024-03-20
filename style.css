@@ -1,0 +1,116 @@
+body, h1, p, ul, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6aa1c5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #97d1af;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+main {
+    flex: 2;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+h2 {
+    color: #3498db;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #97d1af;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #6aa1c5;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #6aa1c5;
+    color: #fff;
+}
+
+@media screen and (min-width: 500px) {
+
+    .flex_container {
+        display: flex;
+        background-color: lightgray;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .flex_container {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        flex-wrap: wrap;
+    }
+}
+
+.flex_item {
+    display: flex;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .flex_image {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+    }
+}
