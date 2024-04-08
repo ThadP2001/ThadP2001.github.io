@@ -226,16 +226,17 @@ async function sort() {
 async function selectionSort(list) {
     for (let i = 0; i < list.length - 1; i++) {
         let minIndex = i;
+        let minItem = await list.getItem(minIndex);
         
         for (let j = i + 1; j < list.length; j++) {
             if (cancelSorting) return;
             // Get the current item and the item at the minIndex
             const currentItem = await list.getItem(j);
-            const minItem = await list.getItem(minIndex);
             
             // If the current item is smaller than the item at minIndex, update minIndex
             if (currentItem < minItem) {
                 minIndex = j;
+                minItem = await list.getItem(minIndex);
             }
         }
         
@@ -325,11 +326,13 @@ async function cycleSort(list) {
     for (let cycleStart = 0; cycleStart < n - 1; cycleStart++) {
         if (cancelSorting) return;
         let itemIndex = cycleStart;
+        let minItem = await list.getItem(itemIndex);
 
         for (let i = cycleStart + 1; i < n; i++) {
             if (cancelSorting) return;
-            if (await list.getItem(i) < await list.getItem(itemIndex)) {
+            if (await list.getItem(i) < minItem) {
                 itemIndex = i;
+                minItem = await list.getItem(itemIndex);
             }
         }
 
