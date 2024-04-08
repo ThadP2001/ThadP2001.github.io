@@ -236,7 +236,7 @@ async function selectionSort(list) {
             // If the current item is smaller than the item at minIndex, update minIndex
             if (currentItem < minItem) {
                 minIndex = j;
-                minItem = await list.getItem(minIndex);
+                minItem = currentItem;
             }
         }
         
@@ -330,9 +330,10 @@ async function cycleSort(list) {
 
         for (let i = cycleStart + 1; i < n; i++) {
             if (cancelSorting) return;
-            if (await list.getItem(i) < minItem) {
+            const testItem = await list.getItem(i);
+            if (testItem < minItem) {
                 itemIndex = i;
-                minItem = await list.getItem(itemIndex);
+                minItem = testItem;
             }
         }
 
