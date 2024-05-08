@@ -10,14 +10,14 @@ body {
 }
 
 header {
-    background-color: #6aa1c5;
+    background-color: #505050;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
 
 nav {
-    background-color: #97d1af;
+    background-color: #A0A0A0;
     padding: 10px;
     text-align: center;
 }
@@ -41,13 +41,18 @@ aside {
 }
 
 h2 {
-    color: #3498db;
+    color: #505050;
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+h2 {
+    padding-left: 15px;
 }
 
 ul {
@@ -55,7 +60,7 @@ ul {
 }
 
 li {
-    background-color: #97d1af;
+    background-color: #A0A0A0;
     color: #fff;
     padding: 8px;
     margin-bottom: 5px;
@@ -68,20 +73,29 @@ table {
 }
 
 button {
-    background-color: #97d1af;
+    background-color: #A0A0A0;
     padding: 10px;
     text-align: center;
+    margin-left: 15px;
+}
+
+select {
+    margin-left: 15px;
 }
 
 th, td {
-    border: 1px solid #6aa1c5;
+    border: 1px solid #505050;
     padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #6aa1c5;
+    background-color: #505050;
     color: #fff;
+}
+
+#chart {
+    margin-left: 15px;
 }
 
 #dropdown {

@@ -3,24 +3,34 @@
 <head>
   <title>Contact Information</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function copyToClipBoard(text) {
+        var dummy = document.createElement("textarea");
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+        alert("Email address copied to clipboard.");
+    }
+  </script>
 </head>
 <body>
     <header>
         <h1>My Contact Information</h1>
     </header>
     <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-        </ul>
-      </nav>
+        <a href="./index.html">Home</a>
+        <a href="./music_page.html">My Music</a>
+        <a href="./sorting_algorithms/sorting_page.html">Sorting Algorithms Demo</a>
+    </nav>
     <div class="container">
         <main>
             <section>
                 <h2>To contact me, please use one of the following email addresses:</h2>
                 <ul>
-                    <li>tpost2@huskers.unl.edu</li>
-                    <li>tpost2@unl.edu</li>
-                    <li>thaddiuspost@yahoo.com</li>
+                    <li onclick="copyToClipBoard('tpost2@huskers.unl.edu')">tpost2@huskers.unl.edu</li>
+                    <li onclick="copyToClipBoard('thaddiuspost@yahoo.com')">thaddiuspost@yahoo.com</li>
                 </ul>
             </section>
         </main>

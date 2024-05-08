@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Music</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+  <header>
+    <h1>My Music</h1>
+  </header>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./sorting_algorithms/sorting_page.html">Sorting Algorithms Demo</a>
+  </nav>
+  <section class="gallery">
+    <h2>Listen to some of the music I've produced!</h2>
+    <p>I do music production as a hobby. Below are some of the things I've uploaded to soundcloud. (Bob Parker is a pseudonym/alias that I use)
+        <br>
+        I use a tool called a DAW (my particular one is called "FL Studio") to make music. DAW stands for Digital Audio Workstation. Sometimes, I'll plug my MIDI keyboard into my laptop so that I can play piano directly into my DAW.
+    </p>
+    <button onclick="toggleDropdown()">Show/Hide Music Gallery</button>
+    <div class="flex_container" id="dropdown">
+        <div class="flex_item">
+          <iframe width="400px" height="400px" class="flex_image" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1663290585&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+        <div class="flex_item">
+          <iframe width="400px" height="400px" class="flex_image" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475452297&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+        <div class="flex_item">
+          <iframe width="400px" height="400px" class="flex_image" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1446335038&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+        <div class="flex_item">
+          <iframe width="400px" height="400px" class="flex_image" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1368301420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+    </div>
+    <h1>Below is an image of a remix I made, just to show what FL Studio looks like with a real project in it.</h1>
+    <img src="music.png" width="50%" style="margin-left: 15px; margin-right: auto; display: block;">
+  </section>
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("dropdown");
+      if (dropdown.style.display === "none") {
+        dropdown.style.display = "flex";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
